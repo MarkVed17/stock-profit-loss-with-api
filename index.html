@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How's my money doing?</title>
+    <link rel="icon" href="assets/stock.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+  </head>
+  <body>
+    <div id="profitEmojis" style="display: none">
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+    </div>
+    <div id="lossEmojis" style="display: none">
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+    </div>
+    <div id="banner">
+      <h1 id="heading">How's my money doing?</h1>
+      <img
+        id="hero-img"
+        src="assets/hero-img.svg"
+        alt="How's my money doing?"
+      />
+      <a id="main-link" href="/#main-app"
+        >Let's Check!</a
+      >
+    </div>
+    <div id="main-app">
+      <form class="form-style">
+        <h3 class="github-repo"><a class="github-repo-link" href="https://github.com/MarkVed17/stocks-profit-loss-with-api">Github-Repo<span><i class="fas fa-location-arrow redirect"></i></span></a></h3>
+        <label for="stock-code" class="label-style">Enter Stock Name: </label>
+        <input
+          type="text"
+          id="stock-name"
+          list="stocks"
+          placeholder="Search for your Stocks"
+          class="input-style"
+        />
+        <datalist id="stocks"></datalist>
+
+        <label for="purchase-price" class="label-style"
+          >Enter Stock Purchase Price:
+        </label>
+        <input
+          type="number"
+          name="stock-purchase-price"
+          id="purchase-price"
+          class="input-style"
+        />
+
+        <label for="stock-quantity" class="label-style"
+          >Enter Stock Quantity:
+        </label>
+        <input
+          type="number"
+          name="stock-quantity"
+          id="stock-quantity"
+          class="input-style"
+        />
+
+        <button id="check" class="check-style">Check</button>
+      </form>
+      <div id="result" style="display: none">
+        <p id="result-text" class="result-style"></p>
+      </div>
+      <!-- <p id="input-test"></p> -->
+    </div>
+    <footer class="footer">
+      <a href="https://github.com/MarkVed17"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/vedantlahane"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/LahaneVedant"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://medium.com/@VedantLahane"><i class="fab fa-medium"></i></a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist> -->
